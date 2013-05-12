@@ -1,0 +1,29 @@
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\bin\Debug\DoodleAnimator.exe
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\bin\Debug\DoodleAnimator.pdb
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\App.g.cs
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator_MarkupCompile.cache
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator_MarkupCompile.lref
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\MainWindow.baml
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.g.resources
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.Properties.Resources.resources
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.csproj.GenerateResource.Cache
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.exe.licenses
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.exe
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.pdb
+C:\Users\Mercy\Documents\Unitec\11 - Administracion de Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.csprojResolveAssemblyReference.cache
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.exe
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.pdb
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\bin\Debug\DoodleAnimator.exe
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\bin\Debug\DoodleAnimator.pdb
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\MainWindow.g.cs
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\App.g.cs
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator_MarkupCompile.cache
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator_MarkupCompile.lref
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\MainWindow.baml
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.g.resources
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.Properties.Resources.resources
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Backup Mercy - Mayo 2013\Documentos\Unitec\11 - Administracion Proyectos de SW\Proyecto\DoodleAnimator\DoodleAnimator\obj\x86\Debug\DoodleAnimator.exe.licenses

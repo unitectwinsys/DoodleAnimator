@@ -1,0 +1,181 @@
+﻿<dxr:DXRibbonWindow
+    x:Class="DoodleAnimator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:DoodleAnimator"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    xmlns:dxbh="http://schemas.devexpress.com/winfx/2008/xaml/bars/internal"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+    Title="Doodle Animator" Height="700" Width="1100"
+    SnapsToDevicePixels="True" UseLayoutRounding="True"
+    dx:ThemeManager.ThemeName="Office2010Black" Loaded="DXRibbonWindow_Loaded" WindowState="Maximized" PreviewMouseRightButtonDown="DXRibbonWindow_PreviewMouseRightButtonDown">
+    
+    <dxr:DXRibbonWindow.Resources>
+
+    </dxr:DXRibbonWindow.Resources>
+
+    <dxb:BarManager x:Name="barManager" dxbh:BlendHelperForBarsAndRibbon.IsDesignControl="true">
+        <dxb:BarManager.Items>
+            <dxb:BarButtonItem x:Name="bInfo" Content="Info" Glyph="Images/Icons/info-16x16.png" LargeGlyph="Images/Icons/info-32x32.png" />
+            <dxb:BarButtonItem x:Name="bCopy" Content="Copy" Glyph="Images/Icons/copy-16x16.png" LargeGlyph="Images/Icons/copy-32x32.png" />
+            <dxb:BarButtonItem x:Name="bPaste" Content="Paste" Glyph="Images/Icons/paste-16x16.png" LargeGlyph="Images/Icons/paste-32x32.png" />
+            <dxb:BarButtonItem x:Name="bNew" Content="New" Glyph="Images/Icons/new-16x16.png" LargeGlyph="Images/Icons/New-32x32.png" ItemClick="bNew_ItemClick" />
+            <dxb:BarButtonItem x:Name="bPrint" Content="Print" Glyph="Images/Icons/print-16x16.png" LargeGlyph="Images/Icons/print-32x32.png" />
+            <dxb:BarButtonItem x:Name="bOpen" Content="Open" Glyph="Images/Icons/open-16x16.png" LargeGlyph="Images/Icons/open-32x32.png" ItemClick="bOpen_ItemClick" />
+            <dxb:BarButtonItem x:Name="bSave" Content="Save" Glyph="Images/Icons/save-16x16.png" LargeGlyph="Images/Icons/save-32x32.png" ItemClick="bSave_ItemClick" />
+            <dxb:BarButtonItem x:Name="bClose" Content="Close" Glyph="Images/Icons/close-16x16.png" LargeGlyph="Images/Icons/close-32x32.png" ItemClick="bClose_ItemClick" />
+            <dxb:BarButtonItem x:Name="bCut" Content="Cut" Glyph="/Images/Icons/cut-16x16.png" LargeGlyph="/Images/Icons/cut-32x32.png" />
+            <dxb:BarButtonItem x:Name="bSelect" Content="Select" Glyph="Images/Icons/select-16x16.png" LargeGlyph="Images/Icons/select-32x32.png" ItemClick="bSelect_ItemClick" />
+            <dxb:BarButtonItem x:Name="bPencil" Content="Pencil" Glyph="Images/Icons/pencil-16x16.png" LargeGlyph="Images/Icons/pencil-32x32.png" ItemClick="bPencil_ItemClick" />
+            <dxb:BarButtonItem x:Name="bEraserSmall" Content="Small" Glyph="Images/Icons/eraser-16x16.png" LargeGlyph="Images/Icons/eraser-32x32.png" ItemClick="bEraserSmall_ItemClick" />
+            <dxb:BarButtonItem x:Name="bEraserLarge" Content="Large" Glyph="Images/Icons/eraser-16x16.png" LargeGlyph="Images/Icons/eraser-32x32.png" ItemClick="bEraserLarge_ItemClick" />
+            <dxb:BarSubItem x:Name="bEraser" Content="Eraser" Glyph="Images/Icons/eraser-16x16.png" LargeGlyph="Images/Icons/eraser-32x32.png" ItemClick="bEraser_ItemClick">
+                <dxb:BarSubItem.ItemLinks>
+                    <dxb:BarButtonItemLink BarItemName="bEraserSmall" UserGlyphSize="Small" Name="bEraserSmallLink" />
+                    <dxb:BarButtonItemLink BarItemName="bEraserLarge" UserGlyphSize="Large" Name="bEraserLargeLink" />
+                </dxb:BarSubItem.ItemLinks>
+            </dxb:BarSubItem>
+
+            <dxb:BarButtonItem x:Name="bClear" Content="Clear" Glyph="Images/Icons/clear-16x16.png" LargeGlyph="Images/Icons/clear-32x32.png" ItemClick="bClear_ItemClick" />
+            <dxb:BarButtonItem x:Name="bPlay" Content="Play" Glyph="Images/Icons/play-16x16.png" LargeGlyph="Images/Icons/play-32x32.png" ItemClick="bPlay_ItemClick" />
+            <dxb:BarButtonItem x:Name="bPause" Content="Pause" Glyph="Images/Icons/pause-16x16.png" LargeGlyph="Images/Icons/pause-32x32.png" ItemClick="bPause_ItemClick" />
+            <dxb:BarButtonItem x:Name="bStop" Content="Stop" Glyph="Images/Icons/stop-16x16.png" LargeGlyph="Images/Icons/stop-32x32.png" ItemClick="bStop_ItemClick" />
+            <dxb:BarButtonItem x:Name="bImport" Content="Import" Glyph="Images/Icons/import-16x16.png" LargeGlyph="Images/Icons/import-32x32.png" ItemClick="bImport_ItemClick" />
+            <dxb:BarEditItem x:Name="txtFPS" Content="Velocidad:"  Content2="fps" EditValue="10" Description="Fotogramas por segundo" EditWidth="30" EditHorizontalAlignment="Center">
+                <dxb:BarEditItem.Manager>
+                    <dxb:BarManager HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </dxb:BarEditItem.Manager>
+                <dxb:BarEditItem.EditSettings>
+                    <dxe:TextEditSettings DisplayFormat="###" AllowNullInput="False" NullText="1" HorizontalContentAlignment="Right" />
+                </dxb:BarEditItem.EditSettings>
+            </dxb:BarEditItem>
+            <dxb:BarStaticItem Name="barStaticItem1" />
+            <dxb:BarStaticItem Content="barStaticItem2" Name="barStaticItem2" />
+
+        </dxb:BarManager.Items>
+        <DockPanel>
+            <dxr:RibbonControl x:Name="ribbonControl1" RibbonStyle="Office2007" dxbh:BlendHelperForBarsAndRibbon.IsDesignControl="true" DockPanel.Dock="Top" ApplicationButtonLargeIcon="/DoodleAnimator;component/Images/paint_brush.png">
+                <dxr:RibbonControl.ApplicationMenu> <!-- MENU PRINCIPAL BOTON GRANDE -->
+                    <dxr:ApplicationMenuInfo RightPaneWidth="280" ShowRightPane="False">
+                        <dxr:ApplicationMenuInfo.ItemLinks>
+                            <dxb:BarButtonItemLink BarItemName="bNew" />
+                            <dxb:BarButtonItemLink BarItemName="bOpen" />
+                            <dxb:BarButtonItemLink BarItemName="bImport" />
+                            <dxb:BarButtonItemLink BarItemName="bSave" />
+                            <dxb:BarItemLinkSeparator></dxb:BarItemLinkSeparator>
+                            <dxb:BarButtonItemLink BarItemName="bInfo" />
+                            <dxb:BarButtonItemLink BarItemName="bClose" />
+                        </dxr:ApplicationMenuInfo.ItemLinks>
+                      <!--  <dxr:ApplicationMenuInfo.RightPane>
+                            <Button Content="Right Pane" />
+                        </dxr:ApplicationMenuInfo.RightPane>
+                        <dxr:ApplicationMenuInfo.BottomPane>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="OK button" />
+                            </StackPanel>
+                        </dxr:ApplicationMenuInfo.BottomPane>-->
+                    </dxr:ApplicationMenuInfo>
+                </dxr:RibbonControl.ApplicationMenu>
+               <!-- <dxr:RibbonControl.PageHeaderItemLinks>  ICONOS PEQUENOS ESQUINA SUPERIOR DERECHA 
+                    <dxb:BarButtonItemLink BarItemName="bNew" />
+                    <dxb:BarButtonItemLink BarItemName="bOpen" />
+                    <dxb:BarButtonItemLink BarItemName="bInfo" />
+                </dxr:RibbonControl.PageHeaderItemLinks> -->
+                <dxr:RibbonDefaultPageCategory>
+                    <dxr:RibbonPage Name="Home" Caption="Home">
+                        <dxr:RibbonPageGroup Caption="File">
+                            <dxr:RibbonPageGroup.ItemLinks>
+                                <dxb:BarButtonItemLink BarItemName="bNew" />
+                                <dxb:BarButtonItemLink BarItemName="bOpen" />
+                                <dxb:BarButtonItemLink BarItemName="bImport" />
+                                <dxb:BarButtonItemLink BarItemName="bSave" />
+                                <dxb:BarButtonItemLink BarItemName="bClose" />
+                                <!--
+                                <dxb:BarItemLinkSeparator />
+                                <dxb:BarButtonItemLink BarItemName="bOpen" RibbonStyle="SmallWithoutText" />
+                                <dxb:BarButtonItemLink BarItemName="bPrint" RibbonStyle="SmallWithoutText" /> -->
+                            </dxr:RibbonPageGroup.ItemLinks>
+                        </dxr:RibbonPageGroup>
+                        <dxr:RibbonPageGroup Caption="Image">
+                            <dxr:RibbonPageGroup.ItemLinks>
+                                <dxb:BarButtonItemLink BarItemName="bSelect" />
+                                <dxb:BarButtonItemLink BarItemName="bPencil" />
+                                <dxb:BarSubItemLink BarItemName="bEraser" RibbonStyle="Large" />
+                                <dxb:BarButtonItemLink BarItemName="bCut" />
+                                <dxb:BarButtonItemLink BarItemName="bCopy" />
+                                <dxb:BarButtonItemLink BarItemName="bPaste" />
+                                <dxb:BarButtonItemLink BarItemName="bClear" />
+                            </dxr:RibbonPageGroup.ItemLinks>
+                        </dxr:RibbonPageGroup>
+                        <dxr:RibbonPageGroup Caption="Animation">
+                            <dxr:RibbonPageGroup.ItemLinks>
+                                <dxb:BarButtonItemLink BarItemName="bPlay" />
+                                <dxb:BarButtonItemLink BarItemName="bPause" />
+                                <dxb:BarButtonItemLink BarItemName="bStop" />
+                                <dxb:BarItemLinkSeparator />
+                                <dxb:BarStaticItemLink BarItemName="barStaticItem1" />
+                                <dxb:BarEditItemLink BarItemName="txtFPS" />
+                            </dxr:RibbonPageGroup.ItemLinks>
+                        </dxr:RibbonPageGroup>
+                    </dxr:RibbonPage>
+                </dxr:RibbonDefaultPageCategory>
+               <!-- <dxr:RibbonControl.ToolbarItemLinks>
+                    <dxb:BarButtonItemLink BarItemName="bNew" />
+                    <dxb:BarButtonItemLink BarItemName="bOpen" />
+                    <dxb:BarItemLinkSeparator />
+                    <dxb:BarButtonItemLink BarItemName="bCopy" />
+                    <dxb:BarButtonItemLink BarItemName="bPaste" />
+                </dxr:RibbonControl.ToolbarItemLinks> -->
+            </dxr:RibbonControl>
+            <dxd:DockLayoutManager x:Name="dockLayoutManager">
+                <dxd:LayoutGroup>
+                    <dxd:LayoutGroup Orientation="Vertical"  ItemWidth="3*">
+                        <dxd:LayoutPanel Caption="Panel" ItemHeight="1.65*">
+                            <InkCanvas Name="inkCanvas1" />
+                        </dxd:LayoutPanel>
+                        <dxd:LayoutGroup Orientation="Horizontal" ItemHeight="80" Name="Bottom" VerticalAlignment="Bottom">
+                            <dxd:LayoutPanel Caption="TimeLine" ItemWidth="1.65*" Name="TimeLine" AllowClose="False">
+                                <StackPanel Background="Gainsboro" VerticalAlignment="Stretch" Height="Auto" Name="stackPanel">
+                                    <Slider Name="slider" IsSnapToTickEnabled="True" HorizontalAlignment="Left" PreviewMouseDown="slider_PreviewMouseDown" Height="29" Width="12" VerticalContentAlignment="Top" VerticalAlignment="Bottom" />
+                                    <ListBox SelectedIndex="{Binding Value, ElementName=slider}" Name="listboxTimeLine" SelectionChanged="listboxTimeLine_SelectionChanged" LayoutUpdated="listboxTimeLine_LayoutUpdated" PreviewMouseLeftButtonDown="listboxTimeLine_PreviewMouseLeftButtonDown" Height="25" VerticalAlignment="Bottom">
+                                        <ListBox.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel IsItemsHost="True" Orientation="Horizontal" Name="stackpanel" />
+                                            </ItemsPanelTemplate>
+                                        </ListBox.ItemsPanel>
+                                    </ListBox>
+                                </StackPanel>
+                            </dxd:LayoutPanel>
+                            <dxd:LayoutPanel Caption="Frames" ItemWidth="185" Name="ActionsFrames" AllowClose="False">
+                                <Grid Name="grid1">
+                                    <Button Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="2,14,0,12" Padding="0,0,0,0" VerticalContentAlignment="Top" Width="28" Name="btnAdd" Click="btnAdd_Click">
+                                        <Image Source="/DoodleAnimator;component/Images/add-icon.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="31,14,0,12" Padding="0,0,0,0" VerticalContentAlignment="Top" Width="28" Name="btnRemove" Click="btnRemove_Click">
+                                        <Image Source="/DoodleAnimator;component/Images/remove-icon.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="64,14,0,12" Padding="0,0,0,0" VerticalContentAlignment="Top" Width="28" Name="btnCut" Click="btnCut_Click">
+                                        <Image Source="/DoodleAnimator;component/Images/Cut-icon.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="92,14,0,12" Padding="0,0,0,0" VerticalContentAlignment="Top" Width="28" Name="btnCopy" Click="btnCopy_Click">
+                                        <Image Source="/DoodleAnimator;component/Images/Action-copy-icon.png" Stretch="Fill"/>
+                                    </Button>
+                                    <Button Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="121,14,0,12" Padding="0,0,0,0" VerticalContentAlignment="Top" Width="28" Name="btnDuplicate" Click="btnDuplicate_Click">
+                                        <Image Source="/DoodleAnimator;component/Images/duplicate-icon-md.png" Stretch="UniformToFill"/>
+                                    </Button>
+                                    <Button Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="150,14,0,12" Padding="0,0,0,0" VerticalContentAlignment="Top" Width="28" Name="btnPaste" Click="btnPaste_Click">
+                                        <Image Source="/DoodleAnimator;component/Images/Action-paste-icon.png" Stretch="Fill"/>
+                                    </Button>
+                                </Grid>
+                            </dxd:LayoutPanel>
+                        </dxd:LayoutGroup>
+                    </dxd:LayoutGroup>
+                </dxd:LayoutGroup>
+            </dxd:DockLayoutManager>
+        </DockPanel>
+    </dxb:BarManager>
+
+</dxr:DXRibbonWindow>

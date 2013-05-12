@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{985AD3C0-33F4-49AA-AFB3-B4A0786E0552}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoodleAnimator</RootNamespace>
+    <AssemblyName>DoodleAnimator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Docking.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Layout.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Ribbon.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\new-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\open-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\close-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\save-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\save-as-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\print-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\undo-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\redo-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\cut-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\copy-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\paste-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\index-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\zoom-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\index-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\cut-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\copy-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\paste-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\new-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\close-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\print-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\open-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\zoom-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\save-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\info-16x16.png" />
+    <Resource Include="Images\Icons\info-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\select-16x16.png" />
+    <Resource Include="Images\Icons\select-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\eraser-16x16.png" />
+    <Resource Include="Images\Icons\eraser-32x32.png" />
+    <Resource Include="Images\Icons\pencil-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\pencil-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\clear-16x16.png" />
+    <Resource Include="Images\Icons\clear-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\pause-16x16.png" />
+    <Resource Include="Images\Icons\pause-32x32.png" />
+    <Resource Include="Images\Icons\play-16x16.png" />
+    <Resource Include="Images\Icons\play-32x32.png" />
+    <Resource Include="Images\Icons\stop-16x16.png" />
+    <Resource Include="Images\Icons\stop-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\addFrame.png" />
+    <Resource Include="Images\Icons\copyFrame.png" />
+    <Resource Include="Images\Icons\cutFrame.png" />
+    <Resource Include="Images\Icons\duplicateFrame.png" />
+    <Resource Include="Images\Icons\pasteFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\removeFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\duplicate-icon-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Action-copy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Action-paste-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cut-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\paint_brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icons\import-16x16.png" />
+    <Resource Include="Images\Icons\import-32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
